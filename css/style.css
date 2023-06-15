@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.registr {
+.content {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -10,22 +10,23 @@ body {
     border-radius: 5px;
 }
 
-.registr form {
+.content form {
     display: flex;
     flex-direction: column;
 }
 
-.registr input[type="text"],
-.registr input[type="tel"],
-.registr input[type="email"],
-.registr input[type="password"] {
+.content input[type="text"],
+.content input[type="tel"],
+.content input[type="email"],
+.content input[type="password"] {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
 
-.registr input[type="submit"] {
+.content input[type="submit"] {
+    margin-top: 10px;
     padding: 10px;
     background-color: #4CAF50;
     color: white;
@@ -34,6 +35,26 @@ body {
     cursor: pointer;
 }
 
-.registr input[type="submit"]:hover {
+.content input[type="submit"]:hover {
     background-color: #45a049;
+}
+
+.content a {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.content a:hover {
+    background-color: #45a049;
+}
+
+input[type="submit"][name="register"] {
+    width: 100%;
 }
